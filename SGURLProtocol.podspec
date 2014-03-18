@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
 	}
 	s.source_files = 'SGURLProtocol/**/*.{h,m}'
 	s.requires_arc = true
-	s.frameworks = 'Foundation', 'CFNetwork', 'Security'
+	s.frameworks = 'Foundation', 'CFNetwork', 'Security', 'UIKit'
 	s.libraries = 'z'
 end
