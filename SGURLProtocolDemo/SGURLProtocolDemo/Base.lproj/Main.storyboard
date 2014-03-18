@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter URL" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QIx-IW-Hxq">
+                                <rect key="frame" x="0.0" y="20" width="290" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="dbS-Co-BCe"/>
+                                </connections>
+                            </textField>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-9z-WqM">
+                                <rect key="frame" x="0.0" y="50" width="320" height="518"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Fsl-62-jW0"/>
+                                </connections>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-JX-4oA">
+                                <rect key="frame" x="290" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bg3-j9-bT1"/>
+                                    <constraint firstAttribute="width" secondItem="F7c-JX-4oA" secondAttribute="height" multiplier="1:1" id="vQK-EY-AtJ"/>
+                                </constraints>
+                                <state key="normal" image="refresh">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refresh:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nMp-UZ-p9Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F7c-JX-4oA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="8lm-sJ-BYz"/>
+                            <constraint firstAttribute="trailing" secondItem="F7c-JX-4oA" secondAttribute="trailing" id="9wz-oL-JAd"/>
+                            <constraint firstItem="F7c-JX-4oA" firstAttribute="leading" secondItem="QIx-IW-Hxq" secondAttribute="trailing" id="Bgl-bL-8wN"/>
+                            <constraint firstItem="oYY-9z-WqM" firstAttribute="top" secondItem="QIx-IW-Hxq" secondAttribute="bottom" id="JjR-89-pFq"/>
+                            <constraint firstAttribute="trailing" secondItem="oYY-9z-WqM" secondAttribute="trailing" id="NpW-nN-F1I"/>
+                            <constraint firstItem="QIx-IW-Hxq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Q6g-5i-UlW"/>
+                            <constraint firstItem="QIx-IW-Hxq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="cn1-XS-ssP"/>
+                            <constraint firstItem="oYY-9z-WqM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ePb-El-HUE"/>
+                            <constraint firstItem="QIx-IW-Hxq" firstAttribute="height" secondItem="F7c-JX-4oA" secondAttribute="height" id="hXp-cf-OXF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oYY-9z-WqM" secondAttribute="bottom" id="vVt-uH-E7H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J1Q-67-OIa"/>
+                    <connections>
+                        <outlet property="addressField" destination="QIx-IW-Hxq" id="Ztm-lK-8Mh"/>
+                        <outlet property="refreshButton" destination="F7c-JX-4oA" id="asO-VK-NrY"/>
+                        <outlet property="webView" destination="oYY-9z-WqM" id="ABW-Iv-UEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refresh" width="44" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

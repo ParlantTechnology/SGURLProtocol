@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2F0B96718D8AE3900FFC17A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B96618D8AE3900FFC17A /* Foundation.framework */; };
+		F2F0B96918D8AE3900FFC17A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B96818D8AE3900FFC17A /* CoreGraphics.framework */; };
+		F2F0B96B18D8AE3900FFC17A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B96A18D8AE3900FFC17A /* UIKit.framework */; };
+		F2F0B97118D8AE3A00FFC17A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B96F18D8AE3A00FFC17A /* InfoPlist.strings */; };
+		F2F0B97318D8AE3A00FFC17A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B97218D8AE3A00FFC17A /* main.m */; };
+		F2F0B97718D8AE3A00FFC17A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B97618D8AE3A00FFC17A /* AppDelegate.m */; };
+		F2F0B97A18D8AE3A00FFC17A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B97818D8AE3A00FFC17A /* Main.storyboard */; };
+		F2F0B97D18D8AE3A00FFC17A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B97C18D8AE3A00FFC17A /* ViewController.m */; };
+		F2F0B97F18D8AE3A00FFC17A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B97E18D8AE3A00FFC17A /* Images.xcassets */; };
+		F2F0B98618D8AE3A00FFC17A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B98518D8AE3A00FFC17A /* XCTest.framework */; };
+		F2F0B98718D8AE3A00FFC17A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B96618D8AE3900FFC17A /* Foundation.framework */; };
+		F2F0B98818D8AE3A00FFC17A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B96A18D8AE3900FFC17A /* UIKit.framework */; };
+		F2F0B99018D8AE3A00FFC17A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B98E18D8AE3A00FFC17A /* InfoPlist.strings */; };
+		F2F0B99218D8AE3A00FFC17A /* SGURLProtocolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B99118D8AE3A00FFC17A /* SGURLProtocolDemoTests.m */; };
+		F2F0B9A618D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B99D18D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m */; };
+		F2F0B9A718D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B99D18D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m */; };
+		F2F0B9A818D8AE6900FFC17A /* SGHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B99F18D8AE6900FFC17A /* SGHTTPURLProtocol.m */; };
+		F2F0B9A918D8AE6900FFC17A /* SGHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B99F18D8AE6900FFC17A /* SGHTTPURLProtocol.m */; };
+		F2F0B9AA18D8AE6900FFC17A /* CanonicalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9A318D8AE6900FFC17A /* CanonicalRequest.m */; };
+		F2F0B9AB18D8AE6900FFC17A /* CanonicalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9A318D8AE6900FFC17A /* CanonicalRequest.m */; };
+		F2F0B9AC18D8AE6900FFC17A /* NSData+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9A518D8AE6900FFC17A /* NSData+Compress.m */; };
+		F2F0B9AD18D8AE6900FFC17A /* NSData+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9A518D8AE6900FFC17A /* NSData+Compress.m */; };
+		F2F0B9AF18D8AEBE00FFC17A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F0B9AE18D8AEBE00FFC17A /* libz.dylib */; };
+		F2F0B9B118D8B1A600FFC17A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B9B018D8B1A600FFC17A /* README.md */; };
+		F2F0B9B218D8B1A600FFC17A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B9B018D8B1A600FFC17A /* README.md */; };
+		F2F0B9B418D8B1B900FFC17A /* ATTRIBUTION.md in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B9B318D8B1B900FFC17A /* ATTRIBUTION.md */; };
+		F2F0B9B518D8B1B900FFC17A /* ATTRIBUTION.md in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B9B318D8B1B900FFC17A /* ATTRIBUTION.md */; };
+		F2F0B9B818D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9B718D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m */; };
+		F2F0B9B918D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9B718D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m */; };
+		F2F0B9BC18D8CBD000FFC17A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */; };
+		F2F0B9BD18D8CBD000FFC17A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2F0B98918D8AE3A00FFC17A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2F0B95B18D8AE3900FFC17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2F0B96218D8AE3900FFC17A;
+			remoteInfo = SGURLProtocolDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2F0B96318D8AE3900FFC17A /* SGURLProtocolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGURLProtocolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F0B96618D8AE3900FFC17A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2F0B96818D8AE3900FFC17A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2F0B96A18D8AE3900FFC17A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2F0B96E18D8AE3A00FFC17A /* SGURLProtocolDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SGURLProtocolDemo-Info.plist"; sourceTree = "<group>"; };
+		F2F0B97018D8AE3A00FFC17A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2F0B97218D8AE3A00FFC17A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2F0B97418D8AE3A00FFC17A /* SGURLProtocolDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGURLProtocolDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F2F0B97518D8AE3A00FFC17A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2F0B97618D8AE3A00FFC17A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2F0B97918D8AE3A00FFC17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2F0B97B18D8AE3A00FFC17A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2F0B97C18D8AE3A00FFC17A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2F0B97E18D8AE3A00FFC17A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2F0B98418D8AE3A00FFC17A /* SGURLProtocolDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGURLProtocolDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F0B98518D8AE3A00FFC17A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2F0B98D18D8AE3A00FFC17A /* SGURLProtocolDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SGURLProtocolDemoTests-Info.plist"; sourceTree = "<group>"; };
+		F2F0B98F18D8AE3A00FFC17A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2F0B99118D8AE3A00FFC17A /* SGURLProtocolDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGURLProtocolDemoTests.m; sourceTree = "<group>"; };
+		F2F0B99C18D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHTTPAuthenticationChallenge.h; sourceTree = "<group>"; };
+		F2F0B99D18D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHTTPAuthenticationChallenge.m; sourceTree = "<group>"; };
+		F2F0B99E18D8AE6900FFC17A /* SGHTTPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHTTPURLProtocol.h; sourceTree = "<group>"; };
+		F2F0B99F18D8AE6900FFC17A /* SGHTTPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHTTPURLProtocol.m; sourceTree = "<group>"; };
+		F2F0B9A018D8AE6900FFC17A /* SGURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGURLProtocol.h; sourceTree = "<group>"; };
+		F2F0B9A218D8AE6900FFC17A /* CanonicalRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanonicalRequest.h; sourceTree = "<group>"; };
+		F2F0B9A318D8AE6900FFC17A /* CanonicalRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanonicalRequest.m; sourceTree = "<group>"; };
+		F2F0B9A418D8AE6900FFC17A /* NSData+Compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Compress.h"; sourceTree = "<group>"; };
+		F2F0B9A518D8AE6900FFC17A /* NSData+Compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Compress.m"; sourceTree = "<group>"; };
+		F2F0B9AE18D8AEBE00FFC17A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F2F0B9B018D8B1A600FFC17A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F2F0B9B318D8B1B900FFC17A /* ATTRIBUTION.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ATTRIBUTION.md; path = ../ATTRIBUTION.md; sourceTree = "<group>"; };
+		F2F0B9B618D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicSGURLProtocolAuthHandler.h; sourceTree = "<group>"; };
+		F2F0B9B718D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicSGURLProtocolAuthHandler.m; sourceTree = "<group>"; };
+		F2F0B9BA18D8CBD000FFC17A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2F0B96018D8AE3900FFC17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F0B9AF18D8AEBE00FFC17A /* libz.dylib in Frameworks */,
+				F2F0B96918D8AE3900FFC17A /* CoreGraphics.framework in Frameworks */,
+				F2F0B96B18D8AE3900FFC17A /* UIKit.framework in Frameworks */,
+				F2F0B96718D8AE3900FFC17A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F0B98118D8AE3A00FFC17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F0B98618D8AE3A00FFC17A /* XCTest.framework in Frameworks */,
+				F2F0B98818D8AE3A00FFC17A /* UIKit.framework in Frameworks */,
+				F2F0B98718D8AE3A00FFC17A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2F0B95A18D8AE3900FFC17A = {
+			isa = PBXGroup;
+			children = (
+				F2F0B9B318D8B1B900FFC17A /* ATTRIBUTION.md */,
+				F2F0B9B018D8B1A600FFC17A /* README.md */,
+				F2F0B99B18D8AE6900FFC17A /* SGURLProtocol */,
+				F2F0B96C18D8AE3A00FFC17A /* SGURLProtocolDemo */,
+				F2F0B98B18D8AE3A00FFC17A /* SGURLProtocolDemoTests */,
+				F2F0B96518D8AE3900FFC17A /* Frameworks */,
+				F2F0B96418D8AE3900FFC17A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2F0B96418D8AE3900FFC17A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B96318D8AE3900FFC17A /* SGURLProtocolDemo.app */,
+				F2F0B98418D8AE3A00FFC17A /* SGURLProtocolDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2F0B96518D8AE3900FFC17A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B9AE18D8AEBE00FFC17A /* libz.dylib */,
+				F2F0B96618D8AE3900FFC17A /* Foundation.framework */,
+				F2F0B96818D8AE3900FFC17A /* CoreGraphics.framework */,
+				F2F0B96A18D8AE3900FFC17A /* UIKit.framework */,
+				F2F0B98518D8AE3A00FFC17A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2F0B96C18D8AE3A00FFC17A /* SGURLProtocolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B97518D8AE3A00FFC17A /* AppDelegate.h */,
+				F2F0B97618D8AE3A00FFC17A /* AppDelegate.m */,
+				F2F0B97E18D8AE3A00FFC17A /* Images.xcassets */,
+				F2F0B97818D8AE3A00FFC17A /* Main.storyboard */,
+				F2F0B9BA18D8CBD000FFC17A /* MBProgressHUD.h */,
+				F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */,
+				F2F0B96D18D8AE3A00FFC17A /* Supporting Files */,
+				F2F0B97B18D8AE3A00FFC17A /* ViewController.h */,
+				F2F0B97C18D8AE3A00FFC17A /* ViewController.m */,
+			);
+			path = SGURLProtocolDemo;
+			sourceTree = "<group>";
+		};
+		F2F0B96D18D8AE3A00FFC17A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B96E18D8AE3A00FFC17A /* SGURLProtocolDemo-Info.plist */,
+				F2F0B96F18D8AE3A00FFC17A /* InfoPlist.strings */,
+				F2F0B97218D8AE3A00FFC17A /* main.m */,
+				F2F0B97418D8AE3A00FFC17A /* SGURLProtocolDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2F0B98B18D8AE3A00FFC17A /* SGURLProtocolDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B99118D8AE3A00FFC17A /* SGURLProtocolDemoTests.m */,
+				F2F0B98C18D8AE3A00FFC17A /* Supporting Files */,
+			);
+			path = SGURLProtocolDemoTests;
+			sourceTree = "<group>";
+		};
+		F2F0B98C18D8AE3A00FFC17A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B98D18D8AE3A00FFC17A /* SGURLProtocolDemoTests-Info.plist */,
+				F2F0B98E18D8AE3A00FFC17A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2F0B99B18D8AE6900FFC17A /* SGURLProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B9B618D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.h */,
+				F2F0B9B718D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m */,
+				F2F0B99C18D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.h */,
+				F2F0B99D18D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m */,
+				F2F0B99E18D8AE6900FFC17A /* SGHTTPURLProtocol.h */,
+				F2F0B99F18D8AE6900FFC17A /* SGHTTPURLProtocol.m */,
+				F2F0B9A018D8AE6900FFC17A /* SGURLProtocol.h */,
+				F2F0B9A118D8AE6900FFC17A /* Utility */,
+			);
+			name = SGURLProtocol;
+			path = ../SGURLProtocol;
+			sourceTree = "<group>";
+		};
+		F2F0B9A118D8AE6900FFC17A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0B9A218D8AE6900FFC17A /* CanonicalRequest.h */,
+				F2F0B9A318D8AE6900FFC17A /* CanonicalRequest.m */,
+				F2F0B9A418D8AE6900FFC17A /* NSData+Compress.h */,
+				F2F0B9A518D8AE6900FFC17A /* NSData+Compress.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2F0B96218D8AE3900FFC17A /* SGURLProtocolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2F0B99518D8AE3A00FFC17A /* Build configuration list for PBXNativeTarget "SGURLProtocolDemo" */;
+			buildPhases = (
+				F2F0B95F18D8AE3900FFC17A /* Sources */,
+				F2F0B96018D8AE3900FFC17A /* Frameworks */,
+				F2F0B96118D8AE3900FFC17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGURLProtocolDemo;
+			productName = SGURLProtocolDemo;
+			productReference = F2F0B96318D8AE3900FFC17A /* SGURLProtocolDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2F0B98318D8AE3A00FFC17A /* SGURLProtocolDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2F0B99818D8AE3A00FFC17A /* Build configuration list for PBXNativeTarget "SGURLProtocolDemoTests" */;
+			buildPhases = (
+				F2F0B98018D8AE3A00FFC17A /* Sources */,
+				F2F0B98118D8AE3A00FFC17A /* Frameworks */,
+				F2F0B98218D8AE3A00FFC17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2F0B98A18D8AE3A00FFC17A /* PBXTargetDependency */,
+			);
+			name = SGURLProtocolDemoTests;
+			productName = SGURLProtocolDemoTests;
+			productReference = F2F0B98418D8AE3A00FFC17A /* SGURLProtocolDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2F0B95B18D8AE3900FFC17A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Parlant Technology Inc.";
+				TargetAttributes = {
+					F2F0B98318D8AE3A00FFC17A = {
+						TestTargetID = F2F0B96218D8AE3900FFC17A;
+					};
+				};
+			};
+			buildConfigurationList = F2F0B95E18D8AE3900FFC17A /* Build configuration list for PBXProject "SGURLProtocolDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2F0B95A18D8AE3900FFC17A;
+			productRefGroup = F2F0B96418D8AE3900FFC17A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2F0B96218D8AE3900FFC17A /* SGURLProtocolDemo */,
+				F2F0B98318D8AE3A00FFC17A /* SGURLProtocolDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2F0B96118D8AE3900FFC17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F0B97F18D8AE3A00FFC17A /* Images.xcassets in Resources */,
+				F2F0B97118D8AE3A00FFC17A /* InfoPlist.strings in Resources */,
+				F2F0B9B418D8B1B900FFC17A /* ATTRIBUTION.md in Resources */,
+				F2F0B9B118D8B1A600FFC17A /* README.md in Resources */,
+				F2F0B97A18D8AE3A00FFC17A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F0B98218D8AE3A00FFC17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F0B9B518D8B1B900FFC17A /* ATTRIBUTION.md in Resources */,
+				F2F0B9B218D8B1A600FFC17A /* README.md in Resources */,
+				F2F0B99018D8AE3A00FFC17A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2F0B95F18D8AE3900FFC17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F0B97D18D8AE3A00FFC17A /* ViewController.m in Sources */,
+				F2F0B97718D8AE3A00FFC17A /* AppDelegate.m in Sources */,
+				F2F0B9AC18D8AE6900FFC17A /* NSData+Compress.m in Sources */,
+				F2F0B9B818D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m in Sources */,
+				F2F0B9BC18D8CBD000FFC17A /* MBProgressHUD.m in Sources */,
+				F2F0B9AA18D8AE6900FFC17A /* CanonicalRequest.m in Sources */,
+				F2F0B97318D8AE3A00FFC17A /* main.m in Sources */,
+				F2F0B9A618D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m in Sources */,
+				F2F0B9A818D8AE6900FFC17A /* SGHTTPURLProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F0B98018D8AE3A00FFC17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2F0B99218D8AE3A00FFC17A /* SGURLProtocolDemoTests.m in Sources */,
+				F2F0B9A918D8AE6900FFC17A /* SGHTTPURLProtocol.m in Sources */,
+				F2F0B9AB18D8AE6900FFC17A /* CanonicalRequest.m in Sources */,
+				F2F0B9B918D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m in Sources */,
+				F2F0B9A718D8AE6900FFC17A /* SGHTTPAuthenticationChallenge.m in Sources */,
+				F2F0B9AD18D8AE6900FFC17A /* NSData+Compress.m in Sources */,
+				F2F0B9BD18D8CBD000FFC17A /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2F0B98A18D8AE3A00FFC17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2F0B96218D8AE3900FFC17A /* SGURLProtocolDemo */;
+			targetProxy = F2F0B98918D8AE3A00FFC17A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2F0B96F18D8AE3A00FFC17A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2F0B97018D8AE3A00FFC17A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2F0B97818D8AE3A00FFC17A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2F0B97918D8AE3A00FFC17A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2F0B98E18D8AE3A00FFC17A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2F0B98F18D8AE3A00FFC17A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2F0B99318D8AE3A00FFC17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2F0B99418D8AE3A00FFC17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2F0B99618D8AE3A00FFC17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGURLProtocolDemo/SGURLProtocolDemo-Prefix.pch";
+				INFOPLIST_FILE = "SGURLProtocolDemo/SGURLProtocolDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2F0B99718D8AE3A00FFC17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGURLProtocolDemo/SGURLProtocolDemo-Prefix.pch";
+				INFOPLIST_FILE = "SGURLProtocolDemo/SGURLProtocolDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2F0B99918D8AE3A00FFC17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SGURLProtocolDemo.app/SGURLProtocolDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGURLProtocolDemo/SGURLProtocolDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SGURLProtocolDemoTests/SGURLProtocolDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2F0B99A18D8AE3A00FFC17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SGURLProtocolDemo.app/SGURLProtocolDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGURLProtocolDemo/SGURLProtocolDemo-Prefix.pch";
+				INFOPLIST_FILE = "SGURLProtocolDemoTests/SGURLProtocolDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2F0B95E18D8AE3900FFC17A /* Build configuration list for PBXProject "SGURLProtocolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2F0B99318D8AE3A00FFC17A /* Debug */,
+				F2F0B99418D8AE3A00FFC17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2F0B99518D8AE3A00FFC17A /* Build configuration list for PBXNativeTarget "SGURLProtocolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2F0B99618D8AE3A00FFC17A /* Debug */,
+				F2F0B99718D8AE3A00FFC17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2F0B99818D8AE3A00FFC17A /* Build configuration list for PBXNativeTarget "SGURLProtocolDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2F0B99918D8AE3A00FFC17A /* Debug */,
+				F2F0B99A18D8AE3A00FFC17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2F0B95B18D8AE3900FFC17A /* Project object */;
+}
