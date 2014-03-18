@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
 		:git => 'https://github.com/ParlantTechnology/SGURLProtocol.git',
 		:tag => s.version.to_s
 	}
-	s.source_files = 'SGURLProtocol/*'
+	s.source_files = 'SGURLProtocol/**/*.{h,m}'
 end
