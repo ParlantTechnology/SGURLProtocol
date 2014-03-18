@@ -98,7 +98,7 @@ static BasicSGURLProtocolAuthHandler * _sharedHandler = nil;
 
 - (void)URLProtocol:(SGHTTPURLProtocol *)protocol didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
 {
-    NSDictionary *credentials = [[NSURLCredentialStorage sharedCredentialStorage] credentialsForProtectionSpace:challenge.protectionSpace];
+//    NSDictionary *credentials = [[NSURLCredentialStorage sharedCredentialStorage] credentialsForProtectionSpace:challenge.protectionSpace];
     NSURLCredential *cred = [[NSURLCredentialStorage sharedCredentialStorage] defaultCredentialForProtectionSpace:challenge.protectionSpace];
     if (cred && challenge.previousFailureCount <= 1) {
         [challenge.sender useCredential:cred forAuthenticationChallenge:challenge];

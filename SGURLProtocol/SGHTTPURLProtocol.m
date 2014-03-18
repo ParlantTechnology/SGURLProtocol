@@ -254,7 +254,7 @@ typedef enum {
             }
             
             
-            DLog(@"A stream error occured,\n URL: %@\n Error domain: %@  code: %d", self.request.URL, error.domain,error.code);
+            DLog(@"A stream error occured,\n URL: %@\n Error domain: %@  code: %ld", self.request.URL, error.domain, (long)error.code);
             [self.client URLProtocol:self didFailWithError:error];
             
             break;
