@@ -38,6 +38,7 @@
 		F2F0B9B918D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9B718D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m */; };
 		F2F0B9BC18D8CBD000FFC17A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */; };
 		F2F0B9BD18D8CBD000FFC17A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */; };
+		F2F0B9BF18D8D54D00FFC17A /* SGURLProtocol.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F2F0B9BE18D8D54D00FFC17A /* SGURLProtocol.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		F2F0B9B718D8B43C00FFC17A /* BasicSGURLProtocolAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicSGURLProtocolAuthHandler.m; sourceTree = "<group>"; };
 		F2F0B9BA18D8CBD000FFC17A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F2F0B9BB18D8CBD000FFC17A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F2F0B9BE18D8D54D00FFC17A /* SGURLProtocol.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SGURLProtocol.podspec; path = ../SGURLProtocol.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		F2F0B95A18D8AE3900FFC17A = {
 			isa = PBXGroup;
 			children = (
+				F2F0B9BE18D8D54D00FFC17A /* SGURLProtocol.podspec */,
 				F2F0B9B318D8B1B900FFC17A /* ATTRIBUTION.md */,
 				F2F0B9B018D8B1A600FFC17A /* README.md */,
 				F2F0B99B18D8AE6900FFC17A /* SGURLProtocol */,
@@ -295,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F0B9BF18D8D54D00FFC17A /* SGURLProtocol.podspec in Resources */,
 				F2F0B97F18D8AE3A00FFC17A /* Images.xcassets in Resources */,
 				F2F0B97118D8AE3A00FFC17A /* InfoPlist.strings in Resources */,
 				F2F0B9B418D8B1B900FFC17A /* ATTRIBUTION.md in Resources */,
@@ -539,6 +543,7 @@
 				F2F0B99718D8AE3A00FFC17A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F0B99818D8AE3A00FFC17A /* Build configuration list for PBXNativeTarget "SGURLProtocolDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +552,7 @@
 				F2F0B99A18D8AE3A00FFC17A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

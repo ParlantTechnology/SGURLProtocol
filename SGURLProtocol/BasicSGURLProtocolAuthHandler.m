@@ -7,7 +7,6 @@
 //
 
 #import "BasicSGURLProtocolAuthHandler.h"
-#import <objc/runtime.h>
 
 @interface BasicSGURLProtocolAuthHandler ()
 @property (nonatomic, strong) UIAlertView *alertView;
